@@ -1,3 +1,9 @@
+---
+layout: post
+title: vuejs overview
+permalink: index.html
+---
+
 ## Vue JS
 
 [vuejs version 2](https://github.com/vuejs/vue/issues/2873)
