@@ -1,6 +1,7 @@
 ---
+layout: post
 title: vuejs overview
-permalink: index.html
+permalink: /vuejs/index.html
 ---
 
 ## Vue JS
