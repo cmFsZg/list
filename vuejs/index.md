@@ -1,5 +1,4 @@
 ---
-layout: post
 title: vuejs overview
 permalink: index.html
 ---
