@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>VueJS</title>
+</head>
+<body>
+
+	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+	<div id="exercise">
+		<!-- two way data binding  -->
+		<input type="text" v-model="name">
+		<p>{{ name }}</p>
+
+	</div>
+
+	<script>
+		new Vue({
+			el : '#exercise',
+			data : {
+				name : 'default value'
+			},
+			methods : {
+				changeValue : function(event) {
+					this.value = event.target.value;
+				},
+
+				showAlert : function(event) {
+					alert("alert");
+				}
+			}
+		});
+	</script>
+
+</body>
+</html>

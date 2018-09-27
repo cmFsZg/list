@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>VueJS</title>
+</head>
+<body>
+
+	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+	<div id="app">
+		<!-- two way data binding  -->
+		<input type="text" v-model="name">
+		<p>{{ name }}</p>
+	</div>
+
+	<script>
+		var app = new Vue({  
+  			el: '#app', // https://vuejs.org/v2/api/#el
+  			template: '', // https://vuejs.org/v2/api/#template
+  			render (h) {}, // https://vuejs.org/v2/api/#render
+   
+  			data: {
+				name : 'default value'	  
+  			}, // https://vuejs.org/v2/api/#data
+
+  			computed: { // https://vuejs.org/v2/api/#computed
+    			fullName: {
+      				get () {},
+      				set (value) {} // https://vuejs.org/v2/guide/computed.html#Computed-Setter
+    			}
+  			},
+
+  			// https://vuejs.org/v2/api/#methods  			
+  			methods: {
+				changeValue : function(event) {
+					this.value = event.target.value;
+				},
+
+				showAlert : function(event) {
+					alert("alert");
+				}
+	  
+  			},
+  			
+  			watch: { // https://vuejs.org/v2/api/#watch
+    			fullName: {
+      				deep: true, // https://vuejs.org/v2/api/#vm-watch
+      				handler () {}
+    			}
+  			},
+  			
+  			directives: {}, // https://vuejs.org/v2/guide/custom-directive.html
+  			filters: {},
+  			components: {},
+  			
+  			mixins: [], // https://vuejs.org/v2/api/#mixins
+  
+  			// https://vuejs.org/guide/instance.html#Lifecycle-Diagram
+  			beforeCreate () {},
+  			created () {},
+  			beforeMount () {},
+  			mounted () {
+    			// https://vuejs.org/v2/api/#Instance-Properties
+  			},
+  			beforeUpdate () {},
+  			updated () {},
+  			activated () {}, // https://vuejs.org/v2/api/#activated
+  			deactivated () {}, // https://vuejs.org/v2/api/#deactivated
+  			beforeDestroy () {},
+  			destroyed () {},
+		});
+
+		Vue.component('my-component', {
+  			name: '', // https://vuejs.org/v2/api/#name
+  			extends: '', // https://vuejs.org/v2/api/#extends
+  			props: [], // https://vuejs.org/v2/api/#props
+  			propsData: {}, // https://vuejs.org/v2/api/#propsData
+		});
+	</script>
+
+</body>
+</html>
