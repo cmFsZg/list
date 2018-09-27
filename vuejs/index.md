@@ -24,7 +24,10 @@ Editors/ IDEs you could use:
 
 * [Official Docs - VueJS Installation](http://vuejs.org/guide/installation.html)
 
-* [kap1](./kap1/index.html)
+* [kap1: hello1](./kap1/hello1.html)
+* [kap1: hello2](./kap1/hello2.html)
+* [kap1: hello3](./kap1/hello3.html)
+* [kap1: finito](./kap1/finished.html)
 
 
 ### Kap 2
@@ -58,32 +61,43 @@ Have a look at this Article:
 * [Official Docs - Computed Properties & Watchers]( http://vuejs.org/guide/computed.html)
 * [Official Docs - Class and Style Binding]( http://vuejs.org/guide/class-and-style.html)
 
+* [kap2: keydown](./kap2/keydown.html)
+* [kap2: twowaybind](./kap2/twowaybind.html)
+* [kap2: dynamicStyles](./kap2/dynamicStyles.html)
+
+
 ### Kap 3
 
-* 
+* [kap3: template](./kap3/index.html)
 
 ### Kap 4
 
-* 
+* [kap4: template](./kap4/index.html)
 
 ### Kap 5
 
+* [kap5: template](./kap5/index.html)
 
 ### Kap 6
 
+* [kap6: template](./kap6/index.html)
 
 ### Kap 7
 
+* [kap7: template](./kap7/index.html)
 
 ### Kap 8
 
+* [kap8: template](./kap8/index.html)
 
 ### Kap 9
 
+* [kap9: template](./kap9/index.html)
 
 ### Kap 10
 
+* [kap10: template](./kap10/index.html)
 
 ### Kap 11
 
-
+* [kap11: template](./kap11/index.html)
