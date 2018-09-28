@@ -64,6 +64,7 @@ Have a look at this Article:
 * [kap2: keydown](./kap2/keydown.html)
 * [kap2: twowaybind](./kap2/twowaybind.html)
 * [kap2: dynamicStyles](./kap2/dynamicStyles.html)
+* [kap2: ex4](./kap2/ex4.html)
 
 
 ### Kap 3
