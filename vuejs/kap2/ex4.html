@@ -101,8 +101,7 @@
             new Vue({
                 el: '#exercise', // https://vuejs.org/v2/api/#el
                 template: '', // https://vuejs.org/v2/api/#template
-                render(h) {}, // https://vuejs.org/v2/api/#render
-
+                
                 // https://vuejs.org/v2/api/#data	  			
                 data: {
                     isHighLighted: false,
@@ -167,8 +166,27 @@
                         };
                     }
                 },
-            });
 
+                directives: {}, // https://vuejs.org/v2/guide/custom-directive.html
+                filters: {},
+                components: {},
+
+                mixins: [], // https://vuejs.org/v2/api/#mixins
+
+                // https://vuejs.org/guide/instance.html#Lifecycle-Diagram
+                beforeCreate() {},
+                created() {},
+                beforeMount() {},
+                mounted() {
+                    // https://vuejs.org/v2/api/#Instance-Properties
+                },
+                beforeUpdate() {},
+                updated() {},
+                activated() {}, // https://vuejs.org/v2/api/#activated
+                deactivated() {}, // https://vuejs.org/v2/api/#deactivated
+                beforeDestroy() {},
+                destroyed() {},
+            });
         </script>
 </body>
 
