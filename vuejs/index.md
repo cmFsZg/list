@@ -11,6 +11,8 @@ permalink: /vuejs/index.html
 * [vuejs framework](https://github.com/vuejs/vue)
 * [vue school](https://vueschool.io)
 
+* [vuejs doc links](./links.html)
+
 ### Kap 1
 
 * [starting project](https://jsfiddle.net/smax/c4mcxu7s/)
