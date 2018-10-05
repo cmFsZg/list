@@ -64,28 +64,31 @@ Have a look at this Article:
 * [kap2: keydown](./kap2/keydown.html)
 * [kap2: twowaybind](./kap2/twowaybind.html)
 * [kap2: dynamicStyles](./kap2/dynamicStyles.html)
+
+#### watch, setTimteout
+* [kap2: ex3](./kap2/ex3.html)
 * [kap2: ex4](./kap2/ex4.html)
 
 
 ### Kap 3
 
-* [kap3: template](./kap3/index.html)
+* [kap3: template](./kap3/vue_template.html)
 
 ### Kap 4
 
-* [kap4: template](./kap4/index.html)
+* [kap4: template](./kap4/vue_template.html)
 
 ### Kap 5
 
-* [kap5: template](./kap5/index.html)
+* [kap5: template](./kap5/vue_template.html)
 
 ### Kap 6
 
-* [kap6: template](./kap6/index.html)
+* [kap6: template](./kap6/vue_template.html)
 
 ### Kap 7
 
-* [kap7: template](./kap7/index.html)
+* [kap7: template](./kap7/vue_template.html)
 
 ### Kap 8
 

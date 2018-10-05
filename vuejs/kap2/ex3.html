@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VueJS</title>
+
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="exercise">
+        <!-- 1) Show a "result" of 'not there yet' as long as "value" is not equal to 37 - you can change "value" with the buttons. Print 'done' once you did it -->
+        <div>
+            <p>Current Value: {{ value }}</p>
+            <button @click="value += 5">Add 5</button>
+            <button @click="value += 1">Add 1</button>
+            <p>{{ result }}</p>
+        </div>
+        <!-- 2) Watch for changes in the "result" and reset the "value" after 5 seconds (hint: setTimeout(..., 5000) -->
+        <div>
+            <input type="text">
+            <p>{{ value }}</p>
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            // https://vuejs.org/v2/api/#el
+            el: '#exercise',
+
+            // https://vuejs.org/v2/api/#data	  			
+            data: {
+                value: 0,
+            },
+            // https://vuejs.org/v2/api/#computed			
+            // computed: dependant properties
+            computed: {
+                result: function() {
+                    if (this.value > 36) {
+                        return 'done';
+                    } else {
+                        return 'not done';
+                    }
+                }
+            },
+            // https://vuejs.org/v2/api/#watch			
+            // watch: execute code upon data changes
+            watch: {
+                result: function(value) {
+                    var vm = this;
+                    setTimeout(function() {
+                        vm.value = 0
+                    }, 2000);
+                },
+
+                a: function(val, oldVal) {
+                    console.log('new: %s, old: %s', val, oldVal)
+                },
+                // string method name
+                b: 'someMethod',
+                // deep watcher
+                c: {
+                    handler: function(val, oldVal) { /* ... */ },
+                    deep: true
+                },
+                // the callback will be called immediately after the start of the observation
+                d: {
+                    handler: function(val, oldVal) { /* ... */ },
+                    immediate: true
+                },
+                e: [
+                    function handle1(val, oldVal) { /* ... */ },
+                    function handle2(val, oldVal) { /* ... */ }
+                ],
+                // watch vm.e.f's value: {g: 5}
+                'e.f': function(val, oldVal) { /* ... */ }
+            },
+
+
+            // https://vuejs.org/v2/api/#methods  			
+            methods: {
+                changeValue: function(event) {
+                    this.value = event.target.value;
+                },
+
+                showAlert: function(event) {
+                    alert("alert");
+                },
+
+                startEffect: function() {
+                    var vm = this;
+                    vm.timer1 = setInterval(function() {
+                        vm.isHighLighted = !vm.isHighLighted;
+                    }, 1000);
+                },
+                stopEffect: function() {
+                    var vm = this;
+                    clearInterval(vm.timer1);
+                },
+
+                startProgress: function() {
+                    var vm = this;
+                    var width = 0;
+
+                    vm.timer2 = setInterval(function() {
+                        width += 1;
+                        vm.progressBar.width = width + 'px';
+                        if (width > 100) clearInterval(vm.timer2);
+                    }, 5);
+                },
+            },
+
+            directives: {}, // https://vuejs.org/v2/guide/custom-directive.html
+            filters: {},
+            components: {},
+
+            mixins: [], // https://vuejs.org/v2/api/#mixins
+
+            // https://vuejs.org/guide/instance.html#Lifecycle-Diagram
+            beforeCreate() {},
+            created() {},
+            beforeMount() {},
+            mounted() {
+                // https://vuejs.org/v2/api/#Instance-Properties
+            },
+            beforeUpdate() {},
+            updated() {},
+            activated() {}, // https://vuejs.org/v2/api/#activated
+            deactivated() {}, // https://vuejs.org/v2/api/#deactivated
+            beforeDestroy() {},
+            destroyed() {},
+        });
+
+    </script>
+</body>
+
+</html>
