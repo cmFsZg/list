@@ -1,0 +1,43 @@
+<head>
+<meta charset="utf-8">
+<title>VueJS</title>
+</head>
+<body>
+	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+	<div id="app">
+
+		// https://vuejs.org/v2/guide/conditional.html#v-else-if.
+
+		<p v-if="show">You can see me!</p>
+		<p v-if="!show">You can't see me!</p>
+
+		<p v-if="show">You can see me   (if else) !</p>
+		<p v-else="!show">You can't see me!</p>
+
+		<!-- https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_template -->
+		<!-- html code inside template is usually not shown in client ... -->
+		<!-- template groups elements together but without the side affect of a div !! -->
+		<!-- this is html5 syntax !!!  https://www.w3schools.com/tags/tag_template.asp -->
+		<template v-if="show">
+		<hr>
+		<h1>heading</h1>
+		</template>
+		
+		<!-- if you dont want to detach it, just hide it with v-show -->
+		<!-- if false: it's still in the DOM but it's hidden by CSS  -->
+		<p v-show="show">Do you also see me?</p>
+
+		<button @click="show = !show">switch on/off</button>
+	</div>
+
+	<script>
+		var app = new Vue({
+			el : '#app', // https://vuejs.org/v2/api/#el   
+			data : {
+				show : true,
+			}, // https://vuejs.org/v2/api/#data
+		});
+	</script>
+</body>
+</html>

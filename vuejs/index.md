@@ -13,6 +13,8 @@ permalink: /vuejs/index.html
 
 * [vuejs doc links](./links.html)
 
+* [vuejs cookbook](https://vuejs.org/v2/cookbook/avoiding-memory-leaks.html#Simple-Example)
+
 ### Kap 1
 
 * [starting project](https://jsfiddle.net/smax/c4mcxu7s/)
@@ -75,6 +77,10 @@ Have a look at this Article:
 ### Kap 3
 
 * [kap3: template](./kap3/vue_template.html)
+* [kap3: v-if](./kap3/v-if.html)
+* [kap3: v-for](./kap3/v-for.html)
+* [kap3: ex5](./kap3/ex5.html)
+* [kap3: ex5 solution](./kap3/ex5.html)
 
 ### Kap 4
 

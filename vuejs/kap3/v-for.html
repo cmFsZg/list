@@ -1,0 +1,68 @@
+<head>
+<meta charset="utf-8">
+<title>VueJS</title>
+</head>
+<body>
+	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+	<div id="app">
+
+		// https://vuejs.org/v2/guide/conditional.html#v-for
+
+		<ul>
+			<li v-for="(fruit, i) in fruits" :key="fruit">{{fruit}} ({{i}})</li>
+		</ul>
+
+		<!-- 2 important things: -->
+		<!-- vuejs automatically watches fruit array !!! value changes in memory -->
+		<button @click="fruits.push('Kiwi')">Add fruit</button>
+
+		<template v-for="(fruit, i) in fruits">
+		<h1>{{fruit}}</h1>
+		<p>({{i}})</p>
+		</template>
+
+		<!-- looping through objects -->
+		<hr>
+		<ul>
+			<li v-for="person in persons">{{person.name}}</li>
+		</ul>
+
+		<ul>
+			<li v-for="person in persons"><span v-for="value in person">{{value}}
+			</span></li>
+		</ul>
+
+		<ul>
+			<li v-for="person in persons">
+				<div v-for="(value, key, index) in person">{{key}}: {{value}}
+					({{index}})</div>
+			</li>
+		</ul>
+
+		<span v-for="n in 10">{{n}}</span>
+
+		<p v-for="show">You can see me!</p>
+
+	</div>
+
+	<script>
+		var app = new Vue({
+			el : '#app', // https://vuejs.org/v2/api/#el   
+			data : {
+				fruits : [ 'apple', 'orange', 'banana' ],
+				persons : [ {
+					name : 'Ralf',
+					age : 27,
+					color : "red"
+				}, {
+					name : 'Benamin',
+					age : 11,
+					color : "blue"
+				}, ],
+				show : true,
+			}, // https://vuejs.org/v2/api/#data
+		});
+	</script>
+</body>
+</html>
