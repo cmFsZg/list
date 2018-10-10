@@ -96,6 +96,7 @@ Have a look at this Article:
 
 * [kap4: template](./kap4/vue_template.html)
 * [kap4: game](./kap4/kap4_game.html)
+* [kap4: solution: game](./kap4/Finished/index.html)
 
 ### Kap 5
 
