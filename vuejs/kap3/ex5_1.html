@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Vuejs</title>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<style>
+.green {
+	background-color: green;
+}
+
+.red {
+	background-color: red;
+}
+</style>
+</head>
+<body>
+	<div id="exercise">
+		<div name="part1_v-if">
+			<h3>Toggle-Button</h3>
+			<button @click="toggle" :class="colorClass">Toggle</button>
+			<p v-if="show">You either see me...</p>
+			<p v-else>Or you see me.</p>
+		</div>
+		<div name="part2_v-for">
+			<h3>Loop over Array:</h3>
+			<p>Array: {‌{fruits}}</p>
+			<ul>
+				<li v-for="(f, i) in fruits">{‌{i+1}}: {‌{f}}</li>
+			</ul>
+		</div>
+		<div name="part3_object">
+			<h3>Loop over Object</h3>
+			<p>Object: {‌{authors}}</p>
+			<p v-for="(val, key, i) in authors">
+				Index: {‌{i}}<br> {‌{key}}: {‌{val}}
+			</p>
+		</div>
+		<div name="part4_nestedLoop">
+			<h3>Nested Loop with If</h3>
+			<p>Object: {‌{test}}</p>
+			<span v-for="val in test"> <span v-if="Array.isArray(val)">
+					<span v-for="v in val">{‌{v}} </span>
+			</span> <span v-else>{‌{val}} </span>
+			</span>
+		</div>
+	</div>
+</body>
+
+<script>
+	new Vue({
+		el : '#exercise',
+		data : {
+			show : true,
+			colorClass : "green",
+			fruits : [ 'apples', 'peaches', 'oranges', 'bananas' ],
+			authors : {
+				title : 'Lord of the Rings',
+				author : 'J.R.R. Tolkiens',
+				books : '3'
+			},
+			test : {
+				name : 'TESTOBJECT',
+				data : [ 1.67, 1.33, 0.98, 2.21 ]
+			}
+		},
+		methods : {
+			toggle : function() {
+				this.show = !this.show;
+				this.colorClass === "green" ? this.colorClass = "red"
+						: this.colorClass = "green";
+			}
+		}
+	});
+</script>
+</html>

@@ -74,17 +74,28 @@ Have a look at this Article:
 * [kap2: ex4](./kap2/ex4.html)
 
 
-### Kap 3
+### Kap 3  (conditionals and lists)
 
 * [kap3: template](./kap3/vue_template.html)
 * [kap3: v-if](./kap3/v-if.html)
 * [kap3: v-for](./kap3/v-for.html)
 * [kap3: ex5](./kap3/ex5.html)
 * [kap3: ex5 solution](./kap3/ex5.html)
+* [kap3: ex5 participant1](./kap3/ex5_1.html)
+* [kap3: ex5 participant2](./kap3/ex5_2.html)
 
-### Kap 4
+#### Kap 3 additional infos:
+
+* [Conditionals (v-if and v-show)](https://jsfiddle.net/smax/hoc719j5/)
+* [Lists](https://jsfiddle.net/smax/o7uy2g0u/)
+
+* [Official Docs - Conditionals](http://vuejs.org/guide/conditional.html)
+* [Official Docs - Lists:](http://vuejs.org/guide/list.html)
+
+### Kap 4  (vuejs internals)
 
 * [kap4: template](./kap4/vue_template.html)
+* [kap4: game](./kap4/kap4_game.html)
 
 ### Kap 5
 
