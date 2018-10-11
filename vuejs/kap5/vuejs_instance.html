@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VueJS</title>
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app1">
+        <h1>{{ title }}</h1>
+        <button v-on:click="show" ref="myButton">Show Paragraph</button>
+        <p v-if="showParagraph">This is not always visible</p>
+    </div>
+    <div id="app2">
+        <h1>{{ title }}</h1>
+        <button @click="changeSomethingVm1()">change something in vm1</button>
+    </div>
+
+    <script>
+        var vm1 =
+            new Vue({
+                el: '#app1',
+                data: {
+                    title: 'The VueJS Instance',
+                    showParagraph: false
+                },
+                methods: {
+                    show: function() {
+
+                        console.log(this.$refs);
+
+                        this.$refs.myButton.innerText = 'test test test';
+
+                        this.showParagraph = true;
+                        this.updateTitle('The VueJS Instance (Updated)')
+                    },
+                    updateTitle: function(title) {
+                        this.title = title;
+                    }
+                },
+                computed: {
+                    lowercaseTitle: function() {
+                        return this.title.toLowerCase();
+                    }
+                },
+                watch: {
+                    title: function(value) {
+                        alert('Title changed, new value: ' + value);
+                    }
+                }
+            });
+        setTimeout(function() {
+            vm1.title = 'changed by timer';
+        }, 10000);
+
+        vm1.newProp = 'a new property, but this is NOT handled by vueJS !!!';
+
+        console.log(vm1);
+
+        console.log(vm1.$data);
+
+        var vm2 = new Vue({
+            el: '#app2',
+            data: {
+                title: 'The VueJS Instance Two',
+            },
+            methods: {
+                changeSomethingVm1: function() {
+                    vm1.title = 'changed by button ...';
+                },
+            }
+        });
+    </script>
+
+</body>
+
+</html>

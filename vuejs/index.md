@@ -98,9 +98,21 @@ Have a look at this Article:
 * [kap4: game](./kap4/kap4_game.html)
 * [kap4: solution: game](./kap4/Finished/index.html)
 
-### Kap 5
+### Kap 5  (the vuejs instance in detail)
+
+* [kap5: notes on vueJS instance](./notes.html)
 
 * [kap5: template](./kap5/vue_template.html)
+* [starting jsFiddle](https://jsfiddle.net/smax/9a2k6cja/)
+* [more than one instance](./kap5/vuejs_instance.html)
+
+#### resources on Kap 5:
+
+* [The Vue Instance Code](https://jsfiddle.net/smax/9a2k6cja/2/)
+* [The VueJS Instance Lifecycle](https://jsfiddle.net/smax/jcgw7ak8/)
+
+* [Official Docs - The Vue Instance](http://vuejs.org/guide/instance.html)
+
 
 ### Kap 6
 

@@ -1,112 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>VueJS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VueJS</title>
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
 </head>
+
 <body>
 
-	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    <div id="app">
+        <h1>{{ title }}</h1>
+        <!-- two way data binding  -->
+        <input type="text" v-model="name">
+        <p>{{ name }}</p>
+        <button @click="clickButton">click this button</button>
+        <button @click="destroy">destroy</button>
+    </div>
 
-	<div id="app">
-		<!-- two way data binding  -->
-		<input type="text" v-model="name">
-		<p>{{ name }}</p>
-	</div>
+    <script>
+        var app = new Vue({
+            el: '#app', // https://vuejs.org/v2/api/#el
+            template: '', // https://vuejs.org/v2/api/#template
 
-	<script>
-		var app = new Vue({  
-  			el: '#app', // https://vuejs.org/v2/api/#el
-  			template: '', // https://vuejs.org/v2/api/#template
-  			
-  			// render (h) {}, // https://vuejs.org/v2/api/#render
-   
-  			data: {
-				name : 'default value'	  
-  			}, // https://vuejs.org/v2/api/#data
+            // render (h) {}, // https://vuejs.org/v2/api/#render
 
-  			computed: { // https://vuejs.org/v2/api/#computed
-    			fullName: {
-      				get () {},
-      				set (value) {} // https://vuejs.org/v2/guide/computed.html#Computed-Setter
-    			}
-  			},
-  			
-            // https://vuejs.org/v2/api/#watch			
-            // watch: execute code upon data changes
-            watch: {
-                result: function(value) {
-                    var vm = this;
-                    setTimeout(function() {
-                        vm.value = 0
-                    }, 2000);
-                },
+            data: {
+                name: 'default value',
+                title: 'title',
+            }, // https://vuejs.org/v2/api/#data
 
-                a: function(val, oldVal) {
-                    console.log('new: %s, old: %s', val, oldVal)
-                },
-                // string method name
-                b: 'someMethod',
-                // deep watcher
-             	// https://vuejs.org/v2/api/#vm-watch
-                c: {
-                    handler: function(val, oldVal) { /* ... */ },
-                    deep: true
-                },
-                // the callback will be called immediately after the start of the observation
-                d: {
-                    handler: function(val, oldVal) { /* ... */ },
-                    immediate: true
-                },
-                e: [
-                    function handle1(val, oldVal) { /* ... */ },
-                    function handle2(val, oldVal) { /* ... */ }
-                ],
-                // watch vm.e.f's value: {g: 5}
-                'e.f': function(val, oldVal) { /* ... */ }
+            computed: { // https://vuejs.org/v2/api/#computed
+                fullName: {
+                    get() {},
+                    set(value) {} // https://vuejs.org/v2/guide/computed.html#Computed-Setter
+                }
             },
 
-  			// https://vuejs.org/v2/api/#methods  			
-  			methods: {
-				changeValue : function(event) {
-					this.value = event.target.value;
-				},
+            // https://vuejs.org/v2/api/#methods  			
+            methods: {
+                changeValue: function(event) {
+                    this.value = event.target.value;
+                },
+                clickButton: function(event) {
+                    this.title = 'updated title ...';
+                },
+                destroy: function(event) {
+                    this.$destroy();
+                },
+            },
 
-				showAlert : function(event) {
-					alert("alert");
-				}
-	  
-  			},
-  			
-  			directives: {}, // https://vuejs.org/v2/guide/custom-directive.html
-  			filters: {},
-  			components: {},
-  			
-  			mixins: [], // https://vuejs.org/v2/api/#mixins
-  
-  			// https://vuejs.org/guide/instance.html#Lifecycle-Diagram
-  			beforeCreate () {},
-  			created () {},
-  			beforeMount () {},
-  			mounted () {
-    			// https://vuejs.org/v2/api/#Instance-Properties
-  			},
-  			beforeUpdate () {},
-  			updated () {},
-  			activated () {}, // https://vuejs.org/v2/api/#activated
-  			deactivated () {}, // https://vuejs.org/v2/api/#deactivated
-  			beforeDestroy () {},
-  			destroyed () {},
-		});
+            components: {},
 
-		Vue.component('my-component', {
-  			name: '', // https://vuejs.org/v2/api/#name
-  			extends: '', // https://vuejs.org/v2/api/#extends
-  			props: [], // https://vuejs.org/v2/api/#props
-  			propsData: {}, // https://vuejs.org/v2/api/#propsData
-		});
-	</script>
+
+            // https://vuejs.org/guide/instance.html#Lifecycle-Diagram
+            beforeCreate() {
+                console.log('beforeCreate');
+            },
+            created() {
+                console.log('created');
+            },
+            beforeMount() {
+                console.log('beforeMount');
+            },
+            mounted() {
+                console.log('mounted');
+                // https://vuejs.org/v2/api/#Instance-Properties
+            },
+            beforeUpdate() {
+                console.log('beforeUpdate');
+            },
+            updated() {
+                console.log('updated');
+            },
+            activated() {
+                console.log('activated');
+            }, // https://vuejs.org/v2/api/#activated
+            deactivated() {
+                console.log('deactivated');
+            }, // https://vuejs.org/v2/api/#deactivated
+            beforeDestroy() {
+                console.log('beforeDestroy');
+            },
+            destroyed() {
+                console.log('destroyed');
+            },
+        });
+    </script>
 
 </body>
 </html>

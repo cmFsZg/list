@@ -4,6 +4,8 @@ title: links
 permalink: /vuejs/links.html
 ---
 
+* [VUE JS API !!!](http://vuejs.org/api)
+
 * [el](https://vuejs.org/v2/api/#el)
 * [data](https://vuejs.org/v2/api/#data)	  			
 * [computed](https://vuejs.org/v2/api/#computed)			
