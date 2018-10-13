@@ -116,7 +116,13 @@ Have a look at this Article:
 
 ### Kap 6
 
+* a case for a development server ...
+* workflow: vue cli and workflow
+* 
 * [kap6: template](./kap6/vue_template.html)
+
+#### development workflow
+* 
 
 ### Kap 7
 
