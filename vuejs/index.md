@@ -122,7 +122,26 @@ Have a look at this Article:
 * [kap6: template](./kap6/vue_template.html)
 
 #### development workflow
-* 
+* code 
+* compile single file templates (don't use template)
+* case insensitive component selectors
+* preprocessors and more
+* productioin server
+
+### Vue CLI
+* vuejs project templates
+* npm install -g vue-cli
+* choose from different templates:
+- simple (index.html + vue cdn import)
+- webpack-simple (basic webpack workflow)
+- webpack (complex webpack workflow incl. testing)
+- browserify/browserify-simple  browserify-workflows
+
+more infos on cli templates:
+* [webpack template for larger projects](https://vuejs-templates.github.io/webpack/)
+* [webpack-simple](https://github.com/vuejs-templates/webpack-simple)
+
+* install latest version of nodeJS: [nodeJS 10.12.0](https://nodejs.org/en/)
 
 ### Kap 7
 
