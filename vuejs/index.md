@@ -11,6 +11,7 @@ permalink: /vuejs/index.html
 * [vuejs framework](https://github.com/vuejs/vue)
 * [vue school](https://vueschool.io)
 
+
 * [vuejs doc links](./links.html)
 
 * [vuejs cookbook](https://vuejs.org/v2/cookbook/avoiding-memory-leaks.html#Simple-Example)
