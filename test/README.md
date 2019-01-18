@@ -40,3 +40,22 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+{{ page.title }}
+
+<p>
+  {{ page.description | truncate_words: 20 }}
+</p>
+
+Loops
+
+{% for post in site.posts %}
+  <a href="{{ post.url }}">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.date | date_to_string }}</p>
+  </a>
+{% endfor %}
+
+Dates
+
+{{ page.date | date: "%b %d, %Y" }}
