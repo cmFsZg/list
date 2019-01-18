@@ -50,6 +50,9 @@ see [data](https://jekyllrb.com/docs/datafiles/)
 
 <ul>
 {% for bookmark in site.data.bookmarks %}
+
+{{ bookmark | jsonify }}
+
   <li>
     <a href="{{ bookmark.typeCode }}">
       {{ bookmark.root }}
