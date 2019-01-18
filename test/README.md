@@ -42,6 +42,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 Dates
+{{ bookmark | jsonify }}
 
 {{ page.date | date: "%b %d, %Y" }}
 
@@ -51,13 +52,23 @@ see [data](https://jekyllrb.com/docs/datafiles/)
 <ul>
 {% for bookmark in site.data.bookmarks.children %}
 
-{{ bookmark | jsonify }}
 
   <li>
     <a href="{{ bookmark.typeCode }}">
       {{ bookmark.root }}
     </a>
   </li>
+  
+  {% for bookmark in bookmark.children %}
+
+  <li>
+    <a href="{{ bookmark.typeCode }}">
+      {{ bookmark.root }}
+    </a>
+  </li>
+{% endfor %}
+
+  
 {% endfor %}
 </ul>
 
