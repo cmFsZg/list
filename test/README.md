@@ -49,7 +49,7 @@ Dates
 see [data](https://jekyllrb.com/docs/datafiles/)
 
 <ul>
-{% for bookmark in site.data.bookmarks %}
+{% for bookmark in site.data.bookmarks.children %}
 
 {{ bookmark | jsonify }}
 
