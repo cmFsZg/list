@@ -51,8 +51,8 @@ see [data](https://jekyllrb.com/docs/datafiles/)
 <ul>
 {% for bookmark in site.data.bookmarks %}
   <li>
-    <a href="{{ bookmark.uri }}">
-      {{ bookmark.title }}
+    <a href="{{ bookmark.typeCode }}">
+      {{ bookmark.root }}
     </a>
   </li>
 {% endfor %}
