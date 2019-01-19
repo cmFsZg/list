@@ -31,18 +31,6 @@
 					"type": "text/x-moz-place-container",
 					"children": [
 						{
-							"guid": "OM9ey7gORmlY",
-							"title": "Machen Sie mit",
-							"index": 2,
-							"dateAdded": 1545237287443000,
-							"lastModified": 1546509375242000,
-							"id": 10,
-							"typeCode": 1,
-							"iconuri": "fake-favicon-uri:https://www.mozilla.org/de/contribute/",
-							"type": "text/x-moz-place",
-							"uri": "https://www.mozilla.org/de/contribute/"
-						},
-						{
 							"guid": "Z19iISvf0p5d",
 							"title": "Über uns",
 							"index": 3,
