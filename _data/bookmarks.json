@@ -31,18 +31,6 @@
 					"type": "text/x-moz-place-container",
 					"children": [
 						{
-							"guid": "xO5cUqm9oyXQ",
-							"title": "Hilfe und Anleitungen",
-							"index": 0,
-							"dateAdded": 1545237287443000,
-							"lastModified": 1546509375242000,
-							"id": 8,
-							"typeCode": 1,
-							"iconuri": "fake-favicon-uri:https://support.mozilla.org/de/products/firefox",
-							"type": "text/x-moz-place",
-							"uri": "https://support.mozilla.org/de/products/firefox"
-						},
-						{
 							"guid": "sOHj-qP-VwjL",
 							"title": "Firefox anpassen",
 							"index": 1,
