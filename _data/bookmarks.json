@@ -21,87 +21,6 @@
 			"root": "bookmarksMenuFolder",
 			"children": [
 				{
-					"guid": "oWjvSGXbWvkN",
-					"title": "Mozilla Firefox",
-					"index": 0,
-					"dateAdded": 1545237287443000,
-					"lastModified": 1546509375242000,
-					"id": 7,
-					"typeCode": 2,
-					"type": "text/x-moz-place-container",
-					"children": [
-						{
-							"guid": "xO5cUqm9oyXQ",
-							"title": "Hilfe und Anleitungen",
-							"index": 0,
-							"dateAdded": 1545237287443000,
-							"lastModified": 1546509375242000,
-							"id": 8,
-							"typeCode": 1,
-							"iconuri": "fake-favicon-uri:https://support.mozilla.org/de/products/firefox",
-							"type": "text/x-moz-place",
-							"uri": "https://support.mozilla.org/de/products/firefox"
-						},
-						{
-							"guid": "sOHj-qP-VwjL",
-							"title": "Firefox anpassen",
-							"index": 1,
-							"dateAdded": 1545237287443000,
-							"lastModified": 1546509375242000,
-							"id": 9,
-							"typeCode": 1,
-							"iconuri": "fake-favicon-uri:https://support.mozilla.org/de/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize",
-							"type": "text/x-moz-place",
-							"uri": "https://support.mozilla.org/de/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize"
-						},
-						{
-							"guid": "OM9ey7gORmlY",
-							"title": "Machen Sie mit",
-							"index": 2,
-							"dateAdded": 1545237287443000,
-							"lastModified": 1546509375242000,
-							"id": 10,
-							"typeCode": 1,
-							"iconuri": "fake-favicon-uri:https://www.mozilla.org/de/contribute/",
-							"type": "text/x-moz-place",
-							"uri": "https://www.mozilla.org/de/contribute/"
-						},
-						{
-							"guid": "Z19iISvf0p5d",
-							"title": "Über uns",
-							"index": 3,
-							"dateAdded": 1545237287443000,
-							"lastModified": 1546509375242000,
-							"id": 11,
-							"typeCode": 1,
-							"iconuri": "fake-favicon-uri:https://www.mozilla.org/de/about/",
-							"type": "text/x-moz-place",
-							"uri": "https://www.mozilla.org/de/about/"
-						}
-					]
-				},
-				{
-					"guid": "-cdPiIU4w34W",
-					"title": "Kürzlich verwendete Schlagwörter",
-					"index": 1,
-					"dateAdded": 1470203284047000,
-					"lastModified": 1470203284047000,
-					"id": 373,
-					"typeCode": 1,
-					"type": "text/x-moz-place",
-					"uri": "place:type=6&sort=14&maxResults=10"
-				},
-				{
-					"guid": "lg-Q5dNRQBgr",
-					"title": "",
-					"index": 2,
-					"dateAdded": 1490052209695000,
-					"lastModified": 1490052209695000,
-					"id": 378,
-					"typeCode": 3,
-					"type": "text/x-moz-place-separator"
-				},
-				{
 					"guid": "mPEFA7txA25E",
 					"title": "BASH shell scripting",
 					"index": 3,
@@ -620,17 +539,6 @@
 							"uri": "http://www.macchiato.com/unicode/chart/"
 						}
 					]
-				},
-				{
-					"guid": "fh7hJumH-OlA",
-					"title": "Kürzlich als Lesezeichen gesetzt",
-					"index": 6,
-					"dateAdded": 1463635159593000,
-					"lastModified": 1463635159593000,
-					"id": 377,
-					"typeCode": 1,
-					"type": "text/x-moz-place",
-					"uri": "place:parent=menu________&parent=unfiled_____&parent=toolbar_____&queryType=1&sort=12&maxResults=10&excludeQueries=1"
 				}
 			]
 		},
@@ -645,17 +553,6 @@
 			"type": "text/x-moz-place-container",
 			"root": "toolbarFolder",
 			"children": [
-				{
-					"guid": "d_UvKDEhvq_1",
-					"title": "Meistbesucht",
-					"index": 0,
-					"dateAdded": 1470203283793000,
-					"lastModified": 1470203283793000,
-					"id": 52,
-					"typeCode": 1,
-					"type": "text/x-moz-place",
-					"uri": "place:sort=8&maxResults=10"
-				},
 				{
 					"guid": "a-QCkE4FIv7y",
 					"title": "Systel",
