@@ -21,30 +21,6 @@
 			"root": "bookmarksMenuFolder",
 			"children": [
 				{
-					"guid": "oWjvSGXbWvkN",
-					"title": "Mozilla Firefox",
-					"index": 0,
-					"dateAdded": 1545237287443000,
-					"lastModified": 1546509375242000,
-					"id": 7,
-					"typeCode": 2,
-					"type": "text/x-moz-place-container",
-					"children": [
-						{
-							"guid": "Z19iISvf0p5d",
-							"title": "Über uns",
-							"index": 3,
-							"dateAdded": 1545237287443000,
-							"lastModified": 1546509375242000,
-							"id": 11,
-							"typeCode": 1,
-							"iconuri": "fake-favicon-uri:https://www.mozilla.org/de/about/",
-							"type": "text/x-moz-place",
-							"uri": "https://www.mozilla.org/de/about/"
-						}
-					]
-				},
-				{
 					"guid": "-cdPiIU4w34W",
 					"title": "Kürzlich verwendete Schlagwörter",
 					"index": 1,
