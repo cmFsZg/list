@@ -8,7 +8,7 @@ permalink: /vuejs/links.html
 
 * [el](https://vuejs.org/v2/api/#el)
 * [data](https://vuejs.org/v2/api/#data)	  			
-* [computed](https://vuejs.org/v2/api/#computed)			
+* [computed](https://vuejs.org/v2/api/#computed)
 * [watch](https://vuejs.org/v2/api/#watch)			
 * [methods](https://vuejs.org/v2/api/#methods)  			
 * [custom-directives](https://vuejs.org/v2/guide/custom-directive.html)
